@@ -3,19 +3,19 @@
 
 int main()
 {
-    int n, a, b;
-    scanf("%d", &b);
-    for(int j=0; j<b; j++)
+    int n=0, a, b, sum[10000]={0};
+    scanf("%d", &n);
+    for(int i=0; i<n; i++)
     {
-        scanf("%d", &n);
-        int sum=0;
-        for(int i=0; i<n; i++)
+        scanf("%d", &b);
+        for(int j=0; j<b; j++)
         {
             scanf("%d", &a);
-            sum += a;
+            sum[i] += a;
         }
-        printf("%d\n", sum);
-    
     }
+    for(int i=0; i<n-1; i++)
+        printf("%d\n\n", sum[i]);
+    printf("%d\n", sum[n-1]);
     return 0;
 }
