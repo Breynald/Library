@@ -13,11 +13,11 @@ int main()
 {
     double x, sum=1, temp=1;
     scanf("%lf", &x);
-    x = x - PAI*(floor(x / PAI));
+    x = x - PAI * (floor(x / PAI));
     for(int i=1; i<=10; i++)
     {
         temp = pow(x, 2*i) / jc(2*i);
-        sum += pow(-1, i)*temp;
+        sum += pow(-1, i) * temp;
     }
     printf("%lf\n", sum);
     printf("%lf", cos(x));
