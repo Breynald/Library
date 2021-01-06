@@ -3,6 +3,12 @@
 
 int main()
 {
-    enum aa{a, b=-1, c, d};
-    printf("%d %d %d", a, b, c);
+	int a[5][5] = {1, 2};
+	for(int i=0; i<5; i++)
+	{
+		for(int j=0; j<5; j++)
+			printf("%d ", a[i][j]);
+		printf("\n");
+	}
+	return 0;
 }
