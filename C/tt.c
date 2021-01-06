@@ -1,14 +1,21 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
+struct bit
+{
+	int x;
+	int y;
+	char name[20];
+};
 
 int main()
 {
-	int a[5][5] = {1, 2};
-	for(int i=0; i<5; i++)
-	{
-		for(int j=0; j<5; j++)
-			printf("%d ", a[i][j]);
-		printf("\n");
-	}
+	struct bit a;
+	a.x = 1;
+	a.y = 2;
+	strcpy(a.name, "hello");
+	FILE *p = fopen("aaa.txt", "w");
+	fwrite(&a, sizeof(a), 1, p);
+	fclose(p);
 	return 0;
 }
