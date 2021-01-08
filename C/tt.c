@@ -23,7 +23,7 @@ float Integral(float (*f)(float), float a, float b)
 
 int main()
 {
-	
+    
 	printf("%f", Integral(function, 1, 2));
 	return 0;
 }
