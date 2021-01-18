@@ -1,12 +1,16 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-
-
+struct bit
+{
+    int a:3;
+    int b:4;
+}e;
 
 int main()
 {
-    int a=2, b=2;
-    printf("%d", INT_MAX);
-	return 0;
+    e.b=7;
+    e.b++;
+    printf("%d %d", sizeof(e), e.b);
+    return 0;
 }
