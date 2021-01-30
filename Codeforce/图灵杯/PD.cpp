@@ -14,54 +14,28 @@ using namespace std;
 #define FIO ios::sync_with_stdio(false);cin.tie(0);cout.tie(0)
 #define FRE freopen("in.in", "r+", stdin);freopen("out.out", "w+", stdout)
 
-int n;
-struct chain
-{
-    ll vertices;
-    ll f;
-    ll l;
-}a[100005];
-int book[100005];
-ll MAX=-1, sum;
-
-void dfs(int s)
-{
-    book[s] = 1;
-    if(a[s+1].f != a[s+1].l && s<n-1)
-    {
-        sum += 2;
-        dfs(s+1);
-    }
-    else
-        sum += a[s].vertices - 1;
-    return;
-}
 
 int main()
 {
     FIO;
-    FRE;
     int t;
     cin >> t;
     while(t--)
     {
-        MAX = -1;
-        memset(book, 0, sizeof(book));
-        cin >> n;
-        
+        ll n, k;
+        cin >> n >> k;
+        if(n == 1)
+            cout << "ma la se mi no.1!" << endl;
+        else if(k >= n-1)
+            cout << "yo xi no forever!" << endl;
+        else
         {
-        f(n)
-            cin >> a[i].vertices;
-        f(n)
-            cin >> a[i].f;
-        f(n)
-            cin >> a[i].l;
+            if((n-1)%(k+1)==0 || (n-1)%(k+1)>k)
+                cout << "ma la se mi no.1!" << endl;
+            else
+               cout << "yo xi no forever!" << endl;
         }
-        
-        
-        
-
-        cout << MAX << endl;
     }
+
     return 0;
 }
