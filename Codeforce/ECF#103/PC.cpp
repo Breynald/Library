@@ -45,10 +45,10 @@ int main()
     cin >> t;
     while(t--)
     {
-        MAX = -1;
+        MAX = -1;sum = 0;
+        int start = 0;
         memset(book, 0, sizeof(book));
         cin >> n;
-        
         {
         f(n)
             cin >> a[i].vertices;
@@ -57,7 +57,10 @@ int main()
         f(n)
             cin >> a[i].l;
         }
-        
+        for(int i=1; i<n; i++)
+        {
+            
+        }
         
         
 

@@ -14,30 +14,25 @@ using namespace std;
 #define FIO ios::sync_with_stdio(false);cin.tie(0);cout.tie(0)
 #define FRE freopen("in.in", "r+", stdin);freopen("out.out", "w+", stdout)
 
+
 int main()
 {
     FIO;
-    //FRE;
     int t;
     cin >> t;
     while(t--)
     {
-        ll n, k, tk;
-        cin >> n >> k;
-        tk = k;
-        if(n == k) cout << 1 << endl;
-        else if(n > k)
+        int n;
+        cin >> n;
+        vi a;
+        f(2*n)
         {
-            if(n % k == 0) cout << 1 << endl;
-            else cout << 2 << endl;
+            int m;
+            cin >> m;
+            a.pb(m);
         }
-        else
-        {
-            if(k % n == 0)
-                cout << k / n << endl;
-            else
-                cout << (k/n)+1 << endl;
-        }
+        sort(a.begin(), a.end());
+        
     }
     return 0;
 }
