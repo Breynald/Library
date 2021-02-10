@@ -1,9 +1,25 @@
 import numpy as np
 import cv2
 import matplotlib.pyplot as plt
-#%matplotlib
+%matplotlib
 plt.style.use('ggplot')
 
+
+#train
+    #out:True
+    knn = cv2.ml.KNearest_create()
+    knn.train(train_data, cv2.ml.ROW_SAMPLE, labels)
+
+
+#predict
+    ret, result, neighbor, dist = knn.findNearest(newcomer, 1) #k = 1
+    print(result)
+    print(neighbor)
+    print(dist)
+
+
+
+###
 np.random.seed(42)
 single_data_point = np.random.randint(0, 100, 2)
 single_label = np.random.randint(0, 2)
@@ -29,15 +45,8 @@ blue = train_data[labels.ravel()==0]
 red = train_data[labels.ravel()==1]
 plot_data(blue, red)
 
-#train
-knn = cv2.ml.KNearest_create()
-knn.train(train_data, cv2.ml.ROW_SAMPLE, labels)
 
 newcomer, _ = generate_data(1)
 plot_data(blue, red)
 plt.plot(newcomer[0, 0], newcomer[0, 1], 'go', markersize=14)
-#predict
-ret, result, neighbor, dist = knn.findNearest(newcomer, 1) #k = 1
-print(result)
-print(neighbor)
-print(dist)
+
