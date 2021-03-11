@@ -22,11 +22,16 @@ using namespace std;
 #define SpeedForce ios::sync_with_stdio(false);cin.tie(0);cout.tie(0)
 #define FRE freopen("in.in", "r+", stdin);freopen("out.out", "w+", stdout)
 #define Accepted 0
-const int N = 2e5+7;
 
 void solve()
 {
-
+    ll p, a, b, c;
+    cin >> p >> a >> b >> c;
+    if(p%a==0 || p%b==0 || p%c==0) cout << 0 << endl;
+    //cout << t1 << t2 << t3 << endl;
+    else
+    cout << min({a-p%a, b-p%b, c-p%c}) << endl;
+    return;
 }
 
 

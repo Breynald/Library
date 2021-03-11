@@ -22,11 +22,28 @@ using namespace std;
 #define SpeedForce ios::sync_with_stdio(false);cin.tie(0);cout.tie(0)
 #define FRE freopen("in.in", "r+", stdin);freopen("out.out", "w+", stdout)
 #define Accepted 0
-const int N = 2e5+7;
-
+ll book[100005];
+ll index_[100005];
+ll a[100005];
 void solve()
 {
-
+    ll n, r;
+    cin >> n;
+    r = n;
+    for(int i=1; i<=n; i++){
+        cin >> a[i];
+        index_[a[i]] = i;
+        book[i] = 1;
+    }
+    for(int i=n; i>=1; i--){
+        if(!book[i]) continue;
+        for(int j=index_[i]; j<=r; j++){
+            cout << a[j] << ' ';
+            book[a[j]] = 0;
+        }
+        r = index_[i]-1;
+    }
+    cout << endl;
 }
 
 
