@@ -25,24 +25,32 @@ using namespace std;
 
 void solve()
 {
-    ll x, y, mid, ans=0;
-    cin >> x >> y;
-    if(y > x) y = x-1;
-    mid = (int)sqrt(x + 1);
-    if(mid > y) mid = y;
-    ans += mid * (mid-1) / 2;
-    for(int i=mid+1; i<=y; i++){
-        if(x / (i+1) == 0) break;
-        if(x/(x/i) != i){
-            ans += ((x/(x/i))-i+1)*(x/i);
-            i = x/(x/i);
-        }else{
-            ans += x / (i+1);
+    int n, a[30005], c[3], ans=0;
+    c[0] = c[1] = c[2] = 0;
+    cin >> n;
+    f(n){
+        cin >> a[i];
+        if(a[i]%3 == 0) c[0]++;
+        else if(a[i]%3 == 1) c[1]++;
+        else c[2]++;
+    }
+    int max_index;
+    f(3){
+        if(c[i] == max({c[0], c[1], c[2]}))
+            max_index = i;
+    }
+    while(c[max_index] != n/3){
+        int temp = c[max_index] - (n/3);
+        ans += temp;
+        c[max_index] = n/3;
+        max_index++;
+        if(max_index == 3) max_index = 0;
+        c[max_index] += temp;
+        f(3){
+            if(c[i] == max({c[0], c[1], c[2]}))
+                max_index = i;
         }
     }
-    
-        //if(x/(i+1) > i-1) ans += i-1;
-        //else ans += x/(i+1);
     cout << ans << endl;
 }
 
@@ -52,7 +60,7 @@ int main()
     SpeedForce;
     #ifdef ONLINE_JUDGE
     #else
-        //FRE;
+        FRE;
     #endif
     int t; cin >> t;
     while(t--) solve();

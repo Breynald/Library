@@ -22,28 +22,21 @@ using namespace std;
 #define SpeedForce ios::sync_with_stdio(false);cin.tie(0);cout.tie(0)
 #define FRE freopen("in.in", "r+", stdin);freopen("out.out", "w+", stdout)
 #define Accepted 0
-
+vll b;
 void solve()
 {
-    ll x, y, mid, ans=0;
-    cin >> x >> y;
-    if(y > x) y = x-1;
-    mid = (int)sqrt(x + 1);
-    if(mid > y) mid = y;
-    ans += mid * (mid-1) / 2;
-    for(int i=mid+1; i<=y; i++){
-        if(x / (i+1) == 0) break;
-        if(x/(x/i) != i){
-            ans += ((x/(x/i))-i+1)*(x/i);
-            i = x/(x/i);
-        }else{
-            ans += x / (i+1);
+    ll x, flag=0;
+    cin >> x;
+    for(ll i=1; i*i*i<=x; i++){
+        if(binary_search(b.begin(), b.end(), x-i*i*i)){
+            flag=1;
+            break;
         }
     }
-    
-        //if(x/(i+1) > i-1) ans += i-1;
-        //else ans += x/(i+1);
-    cout << ans << endl;
+    if(flag)
+        cout << "YES" << endl;
+    else cout << "NO" << endl;
+    return;
 }
 
 
@@ -52,8 +45,11 @@ int main()
     SpeedForce;
     #ifdef ONLINE_JUDGE
     #else
-        //FRE;
+        FRE;
     #endif
+    for(int i=1; i<=10000; i++){
+        b.pb(pow(i, 3));
+    }
     int t; cin >> t;
     while(t--) solve();
     return Accepted;
