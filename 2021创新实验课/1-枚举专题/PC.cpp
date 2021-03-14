@@ -35,14 +35,17 @@ void solve()
         }
         i++;
     }
-    cout << a[q-1] << endl;
+    for(int i=1; i<=q; i++)
+    cout << i << ' ' << a[i-1] << endl;
 }
 
 
 int main()
 {
-    int t; cin >> t;
+    /*int t; cin >> t;
     while(t--)
-        solve();
+    */
+    freopen("out.out", "w+", stdout);
+       solve();
     return 0;
 }
