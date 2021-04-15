@@ -27,5 +27,4 @@ public:
 	bool operator!=(MyComplex&);
 	friend ostream& operator<<(ostream& out, const MyComplex& c);
 	friend istream& operator>>(istream& in, MyComplex& c);
-
 };

@@ -2,7 +2,6 @@
 #include "MyComplex.h"
 using namespace std;
 
-
 int main()
 {
 	MyComplex p(2, 0), q(1, 0);
