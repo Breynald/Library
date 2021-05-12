@@ -1,0 +1,3 @@
+﻿  HumanPlayer.cpp
+D:\Library1\CPPLAB\Rock-Paper-Scissors\HumanPlayer.cpp(12,41): warning C4554: “|”: 检查运算符优先级是否存在的可能的错误；使用括号阐明优先级
+  Rock-Paper-Scissors.vcxproj -> D:\Library1\CPPLAB\Rock-Paper-Scissors\Debug\Rock-Paper-Scissors.exe
