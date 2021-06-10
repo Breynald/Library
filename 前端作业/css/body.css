@@ -1,0 +1,623 @@
+.body1{
+    width: 1190px;
+    height: 2265px;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    color: #333;
+}
+
+.sidebar{
+    font-size: 12px;
+    float: right;
+    width: 248px;
+    border: 1px solid #e8e8e8;
+    background-color: #f7f7f7;
+    padding: 10px;
+    margin-top: 8px;
+}
+
+.sidebar_annc{
+    border-bottom: 1px solid #e8e8e8;
+    padding: 15px 12px 10px 7px;
+    margin-bottom: 10px;
+}
+
+.annc_more{
+    cursor: pointer;
+    font-family: none;
+    margin-top: 4px;
+    float: right;
+    font-size: 12px;
+    color: #3d4246;
+}
+
+.annc_more:hover{
+    color: #eb0045;
+}
+
+.sidebar_item{
+    margin-bottom: 15px;
+}
+.sidebar_item a:hover{
+    color: #dc2625;
+}
+
+.sidebar_content1{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    background: url(../image/sidebar_background.png) no-repeat 0 50%;
+    line-height: 22px;
+    text-indent: 7px;
+    font-size: 12px;
+    color: #666;
+    font-weight: 700;
+}
+.sidebar_content1 a{
+    color: #666;
+}
+
+.sidebar_content2{
+    color: #bdbdbd;
+    line-height: 22px;
+    text-indent: 7px;
+}
+.sidebar_content2 a{
+    color: #777;
+}
+
+.sidebar_news{
+    border-bottom: 1px solid #e8e8e8;
+    padding: 15px 12px 10px 7px;
+    margin-bottom: 10px;
+}
+
+.sidebar_content3{
+    background: url(../image/sidebar_background.png) 0 50% no-repeat;
+    color: #aeaeae;
+    line-height: 22px;
+    text-indent: 7px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-weight: 400;
+}
+
+.sidebar_content3 a{
+    color: #555;
+}
+.sidebar_content3 a:hover{
+    color: #dc2625;
+}
+
+.siderbar_qipai{
+    border-bottom: 1px solid #e8e8e8;
+    padding: 15px 12px 10px 7px;
+    margin-bottom: 10px;
+}
+
+.qipai_a1{
+    color: #333;
+}
+.qipai_a1:hover{
+    color: #d91615
+}
+
+.qipai_item{
+    background-color: #fff;
+    margin-bottom: 15px;
+    padding-bottom: 14px;
+    margin-left: 8px;
+    width: 218px;
+}
+.qipai_item:hover{
+    border-color: #dc2625;
+    outline: #dc2625 solid 3px;
+}
+
+.img_wrap{
+    color: #333;
+}
+.img_wrap:hover{
+    color: #dc2625;
+}
+.img_wrap img{
+    margin-bottom: 8px;
+    width: 218px;
+    height: 146px;
+    border: 0;
+}
+
+.qipai_title{
+    height: 22px;
+    line-height: 22px;
+    font-weight: 700;
+    text-align: center;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.qipai_intro{
+    color: #666;
+    text-align: center;
+    line-height: 22px;
+}
+
+.today_mod{
+    float: left;
+    width: 886px;
+}
+
+.today_mod_title{
+    overflow: hidden;
+    zoom: 1;
+    border-bottom: 1px solid #d91615;
+}
+
+.mod_title1{
+    float: left;
+    font-weight: 700;
+    font-size: 28px;
+    color: #d91615;
+}
+
+.mod_title2{
+    float: left;
+    font-weight: 700;
+    font-size: 28px;
+    color: #333;
+}
+
+.weiguan{
+    color: #d91615;
+    float: right;
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 8px;
+}
+
+.weiguan em{
+    font-style: normal;
+    background-color: #d91615;
+    color: #fff;
+    padding-left: 3px;
+    padding-right: 3px;
+    font-size: 18px;
+    margin-left: 1px;
+    text-align: center;
+    font-family: tahoma,arial,'Hiragino Sans GB',"\5b8b\4f53",sans-serif!important;
+}
+
+.today_mod_subtitle{
+    overflow: hidden;
+    margin-top: 20px;
+}
+
+.today_mod_subtitle i{
+    font-style: normal;
+    font-weight: 400;
+    width: 0;
+    height: 18px;
+    display: inline-block;
+    border-left: 1px solid #d4d4d4;
+    vertical-align: middle;
+}
+
+.jidongche{
+    color: #333;
+    font-size: 18px;
+    font-weight: 400;
+    float: left;
+}
+.jidongche:hover{
+    color: #d91615;
+}
+
+.body1 .more_count{
+    float: right;
+    font-weight: 400;
+    margin-top: 3px;
+}
+.body1 .more_count a{
+    color: #333;
+    font-size: 12px;
+    line-height: 18px;
+}
+.body1 .more_count a:hover{
+    color: #d91615;
+}
+
+.car_list{
+    width: 930px;
+    margin: 20px 0 0;
+    overflow: visible;
+}
+
+.car_list_item{
+    
+    overflow: visible;
+    float: left;
+    margin: 0 23px 20px 0;
+}
+
+.car_list_item a{
+    border: 1px solid #eaeaea;
+    display: block;
+    overflow: visible;
+    position: relative;
+    width: 278px;
+    height: 315px;
+}
+
+.car_header_section{
+    display: block;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+    width: 278px;
+    height: 185px;
+    line-height: 180px;
+}
+
+.car_pic{
+    display: inline;
+    vertical-align: middle;
+    max-width: 278px;
+    border: 0;
+}
+
+.car_title{
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    background-color: #fff;
+    background: rgba(255, 255, 255, .9);
+    color: #000;
+    font-size: 14px;
+    position: absolute;
+    padding: 0 13px;
+    left: 0;
+    bottom: 0;
+    height: 24px;
+    line-height: 24px;
+    width: 252px;
+    text-align: left;
+}
+
+
+.car_list_item:hover a{
+    outline: 2px solid #dc2625;
+    border-color: #dc2625;
+
+}
+.car_list_item:hover .car_title{
+    color: #dc2625;
+}
+
+.car_info_section{
+    color: #999;
+    display: block;
+    font-size: 12px;
+    padding-left: 13px;
+    height: 131px;
+}
+
+.current_price{
+    display: block;
+    padding-top: 10px;
+    height: 30px;
+    line-height: 30px;
+}
+
+.currency{
+    font-size: 14px;
+    color: #d91615;
+    padding-left: 10px;
+    font-weight: 400;
+    font-family: arial,tahoma,'Hiragino Sans GB','\5b8b\4f53',sans-serif;
+}
+
+.price1{
+    font-size: 24px;
+    color: #d91615;
+    font-weight: 700;
+    font-family: tahoma,'Hiragino Sans GB','\5b8b\4f53',sans-serif;
+}
+
+.price2{
+    font-size: 24px;
+    color: #d91615;
+    font-weight: 700;
+}
+
+.price1_small{
+    font-size: 16px;
+    color: #d91615;
+    font-weight: 700;
+    font-family: tahoma,'Hiragino Sans GB','\5b8b\4f53',sans-serif;
+}
+
+.price2_small{
+    font-size: 16px;
+    color: #d91615;
+    font-weight: 700;
+}
+
+.price_assess{
+    padding-top: 2px;
+    line-height: 20px;
+    height: 20px;
+    margin: 0;
+}
+
+.value{
+    color: #777;
+    padding-left: 10px;
+}
+
+.price_time{
+    font-family: tahoma,'Hiragino Sans GB','\5b8b\4f53',sans-serif;
+    color: #000;
+    padding-left: 10px;
+    font-weight: 700;
+}
+
+.footer_section{
+    border-top: 1px solid #eee;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 278px;
+    height: 36px;
+    line-height: 36px;
+}
+
+.num_auction{
+    font-family: 'PingFangSC-Regular', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    border-right: 1px solid #eee;
+    color: #999;
+    float: left;
+    padding-left: 12px;
+    width: 126px;
+    height: 36px;
+}
+
+.num_apply{
+    font-family: 'PingFangSC-Regular', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    color: #999;
+    float: left;
+    padding-left: 12px;
+    width: 126px;
+    height: 36px;
+}
+
+.ing{
+    background-image: url(../image/ing.png);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    width: 70px;
+    height: 23px;
+    right: -4px;
+    bottom: 45px;
+    position: absolute;
+}
+
+
+
+
+
+
+
+
+
+
+.body2{
+    height: 1679.6px;
+    width: 1190px;
+    margin: 40px auto 0;
+}
+
+.body2 .gov_title{
+    margin-bottom: 50px;
+}
+
+
+.predict_title1{
+    float: left;
+    font-weight: 700;
+    font-size: 28px;
+    color: #19aa6b;
+    line-height: 42px;
+}
+
+.predict_title2{
+    float: left;
+    font-weight: 700;
+    font-size: 28px;
+    color: #333;
+    line-height: 42px;
+}
+
+.nextday_main{
+    height: 1588px;
+    position: relative;
+
+}
+
+.nextday_bar{
+    position: absolute;
+    top: 0;
+    left: -20px;
+    width: 3px;
+    height: 100%;
+    background: #dedede;
+}
+
+.nextday_item_tomorrow{
+    position: relative;
+    margin-bottom: 75px;
+    padding-top: 10px;
+    height: 694px;
+}
+
+.nextday_item_tomorrow2{
+    position: relative;
+    margin-bottom: 75px;
+    padding-top: 10px;
+    height: 360px;
+}
+
+.nextday_title{
+    background-color: #19aa6b;
+    position: absolute;
+    top: -35px;
+    left: 0;
+    height: 40px;
+    line-height: 40px;
+    width: 100%;
+}
+
+.nextday_title2{
+    background-color: #e8e8e8;
+    position: absolute;
+    top: -35px;
+    left: 0;
+    height: 40px;
+    line-height: 40px;
+    width: 100%;
+}
+
+.body2 .more_count{
+    float: right;
+    font-size: 12px;
+    height: 40px;
+    line-height: 40px;
+    font-weight: 400;
+    margin-right: 12px;
+    display: inline;
+}
+
+.body2 .left_stamp{
+    position: absolute;
+    bottom: 0;
+    left: -68px;
+    width: 68px;
+    height: 36px;
+}
+
+.body2 .left_stamp .left_stamp_text{
+    color: #fff;
+    background-color: #19aa6b;
+    float: left;
+    width: 34px;
+    height: 33px;
+    text-align: center;
+    font-size: 12px;
+    line-height: 15px;
+    padding: 3px 1px 0;
+}
+
+
+.body2 .left_stamp .left_stamp_quan{
+    width: 28px;
+    float: left;
+    text-align: center;
+}
+
+.body2 .left_stamp .left_stamp_quan img{
+    width: 17px;
+    height: 17px;
+}
+
+.body2 .left_stamp .left_stamp_arrow{
+    border-color: transparent #19aa6b transparent transparent;
+    border-width: 6px;
+    border-style: dashed solid dashed dashed;
+    font-size: 0;
+    overflow: hidden;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    margin-top: -6px;
+    width: 0;
+    height: 0;
+    line-height: 0;
+}
+
+.body2 .left_stamp .left_stamp_arrow2{
+    border-color: transparent #e8e8e8 transparent transparent;
+    border-width: 6px;
+    border-style: dashed solid dashed dashed;
+    font-size: 0;
+    overflow: hidden;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    margin-top: -6px;
+    width: 0;
+    height: 0;
+    line-height: 0;
+}
+
+.nextday_item_list{
+    width: 1220px;
+    margin: 20px 0 0;
+    overflow: visible;
+    min-height: 320px;
+}
+
+.will{
+    background-image: url(../image/will.png);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    width: 70px;
+    height: 23px;
+    right: -4px;
+    bottom: 45px;
+    position: absolute;
+}
+
+.body2 .tag_section{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.tag_support_loans{
+    background-color: #ffa62f;
+    color: #fff;
+    position: relative;
+    float: right;
+    width: 45px;
+    height: 22px;
+    line-height: 22px;
+    text-align: center;
+    font-family: '\5b8b\4f53',arial tahoma,'Hiragino Sans GB',sans-serif;
+}
+
+.tag-support-org-loan{
+    background-color: #ffa62f;
+    color: #fff;
+    position: relative;
+    float: right;
+    width: 58px;
+    height: 22px;
+    line-height: 22px;
+    text-align: center;
+    font-family: '\5b8b\4f53',arial tahoma,'Hiragino Sans GB',sans-serif;
+}
+
+.tag-buy-restrictions{
+    background-color: #0fbe84;
+    color: #fff;
+    position: relative;
+    float: right;
+    width: 45px;
+    height: 22px;
+    line-height: 22px;
+    text-align: center;
+    font-family: '\5b8b\4f53',arial tahoma,'Hiragino Sans GB',sans-serif;
+
+}
