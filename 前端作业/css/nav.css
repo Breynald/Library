@@ -552,12 +552,107 @@ a{
 }
 
 
-.panel{
-    width: 658px;
-    height: 368px;
-    line-height: 368px;
-    text-align: center;
-    position: absolute;
+.middle_layout ul{
+    position: relative;
+    list-style: none;
 }
 
+.carousel li{
+    position: absolute;
+    opacity: 0;
+    transition: opacity .5s;
+}
 
+.carousel .selection{
+    opacity: 1;
+    z-index: 10;
+}
+
+.prev{
+    position: absolute;
+    top: 50%;
+    left: 6px;
+    width: 40px;
+    height: 40px;
+    margin-top: -20px;
+    background-color: rgba(0, 0, 0, .3);
+    z-index: 999;
+    visibility: hidden;
+    cursor: pointer;
+}
+.prev i{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -7px;
+    margin-top: -12px;
+    width: 15px;
+    height: 23px;
+    display: block;
+    background: url(../image/arraw.png) 0 -27px no-repeat;
+}
+.prev:hover{
+    background-color: rgba(0, 0, 0, .6);
+}
+
+.next{
+    left: auto;
+    right: 6px;
+    position: absolute;
+    top: 50%;
+    width: 40px;
+    height: 40px;
+    margin-top: -20px;
+    background-color: rgba(0, 0, 0, .3);
+    z-index: 998;
+    visibility: hidden;
+    cursor: pointer;
+}
+.next i{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -7px;
+    margin-top: -12px;
+    width: 15px;
+    height: 23px;
+    display: block;
+    background: url(../image/arraw.png);
+}
+.next:hover{
+    background-color: rgba(0, 0, 0, .6);
+}
+
+.circle {
+    position: absolute;
+    height: 16px;
+    width: 80px;
+    line-height: 16px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, .6);
+    left: 50%;
+    bottom: -335px;
+    text-align: center;
+    z-index: 997;
+    padding: 0 2px 1px;
+    margin-left: -42px;
+}
+.circle li {
+    width: 9px;
+    height: 9px;
+    margin: 1px;
+    border-radius: 10px;
+    background: #dedede;
+    cursor: pointer;
+    display: inline-block;
+}
+.circle .current {
+    background: #ce2023;
+}
+
+.middle_layout:hover .prev{
+    visibility: visible;
+}
+.middle_layout:hover .next{
+    visibility: visible;
+}
