@@ -550,3 +550,14 @@ a{
     overflow: hidden;
     background: url(../image/new.gif) no-repeat;
 }
+
+
+.panel{
+    width: 658px;
+    height: 368px;
+    line-height: 368px;
+    text-align: center;
+    position: absolute;
+}
+
+
